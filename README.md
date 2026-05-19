@@ -10,7 +10,7 @@ and comparative genomic analysis with closely related species* (Nina Thorstensen
 University of South-Eastern Norway, 2026).
 
 A companion workflow for genome annotation and comparative analysis is available
-at: [LINK to annotation/comparative repository here]
+[[LINK to annotation/comparative repository here](https://github.com/ninkath/fpinicola-annotation-comparative)]
 
 ## What this workflow does
 
