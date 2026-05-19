@@ -1,6 +1,6 @@
-# F. pinicola assembly, QC, and heterozygosity pipeline
+# F. pinicola assembly, QC and heterozygosity pipeline
 
-Snakemake workflow for de novo assembly, polishing, evaluation, and inter-nuclear
+Snakemake workflow for de novo assembly, polishing, evaluation and inter-nuclear
 heterozygosity analysis of Oxford Nanopore long-read data from a dikaryotic
 *Fomitopsis pinicola* isolate.
 
@@ -133,26 +133,6 @@ without producing files.
 ## Assembly overview plot script
 
 This script should be run from the project root, and paths for input files should be confirmed before running.
-
-## Output structure
-
-Selected output paths produced by the workflow:
-
-| Path | Contents |
-|---|---|
-| `results/filtered/{sample}_clean.fastq.gz` | Read set used for assembly |
-| `results/filtered_phasing/{sample}_clean.fastq.gz` | Read set used for variant calling |
-| `results/qc/nanoplot_*/` | NanoPlot reports per read set |
-| `results/assembly/{flye,hifiasm}/{sample}/assembly.fasta` | Unpolished assemblies |
-| `results/racon/{sample}/racon_r{1,2}.fasta` | Racon-polished intermediates |
-| `results/medaka/{sample}/consensus.fasta` | Final polished reference assembly |
-| `results/qc/{busco,quast}_*/` | Assembly evaluation per stage |
-| `results/qc/mapping/{sample}/` | Read-back BAM, coverage, flagstat |
-| `results/qc/barrnap/{sample}/` | rRNA gene annotation |
-| `results/merqury/{sample}/` | Merqury QV and k-mer copy-number spectrum |
-| `results/circos/{sample}/` | GC, coverage, tidk and other per-window tracks |
-| `results/clair3_hifiasm/{sample}/` | Clair3 VCF and heterozygosity statistics |
-| `results/qc/het_density_hifiasm/{sample}/` | Per-contig and windowed heterozygosity |
 
 ## License
 
